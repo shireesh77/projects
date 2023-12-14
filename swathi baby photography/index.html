@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.5.0-web/fontawesome-free-6.5.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-color: black;
+        }
+        nav{
+            background-image: url("./up\ cloud.svg");
+            background-repeat: no-repeat;
+            position: relative;
+            top: -10px;
+            background-size: cover;
+            height: 200px;
+        }
+        #navitems{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            position: relative;
+            top: 50px;
+        }
+        #navitems a{
+            font-family: cursive;   
+            font-weight: 550;
+            color: #022662;
+            cursor: pointer;
+        }
+        .main{
+            background-image: url("bg.svg");
+            height: 750px;
+            background-color: #5CA9DD;
+            overflow: hidden;
+        }
+        .nipple{
+            position: relative;
+            left: 50px;
+            top: -255px;
+        }
+        .moon{
+            position: relative;
+            left: 150px;
+            top: -50px;
+        }
+        .logo{
+            position: relative;
+            left: 320px;
+            top: 30px;
+        }
+        .car{
+            position: relative;
+            left: 430px;
+            top: -170px;
+        }
+        .bottle{
+            position: relative;
+            left: 490px;
+            top: -180px;
+        }
+        .toy{
+            position: relative;
+            left: 540px;
+            top: -190px;
+        }
+        .downcloud{
+            width: 1456px;
+            height: 200px;
+        }
+        #asset{
+            width: 1456px;
+            height: 50px;
+            position: relative;
+            top: -40px;
+        }
+        .box2{
+            width: 1457px;
+            height: 380px;
+            position: relative;
+            top: -40px;
+        }
+        .bg1,.bg2,.bg3,.bg4,.bg5{
+            width: 1457px;
+            height: 30px;
+        }
+        .bg1{
+            background-color: white;
+        }
+        .bg2{
+            background-color: #F16871;
+            height: 150px;
+        }
+        .bg3{
+            background-color: white;
+        }
+        .bg4{
+            background-color: #5CA9DD;
+            height: 150px;
+        }
+        .bg5{
+            background-color: white;
+        }
+        #box2content{
+            display: flex;
+        }
+        .box2pics{
+            display: flex;
+            gap: 70px;
+            margin-left: 70px;
+            position: relative;
+            top: -40px;
+        }
+        .box2pic1,.box2pic2{
+            width: 300px;
+            height: 300px;
+            position: relative;
+            top: -300px;
+            outline: 2px dashed white;
+            outline-offset: -12px;
+            border-radius: 20px;
+        }
+        .orangebar{
+            position: relative;
+            top: -350px;
+            left: 150px;
+        }
+        .bluebar{
+            position: relative;
+            top: -360px;
+            left: 150px;
+        }
+        .box2text{
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+        }
+        #capturebtn,.interestedbtn,.categorybtn{
+            background-color: #F16871;
+            width: fit-content;
+            padding-left: 15px;
+            padding-right: 15px;
+            height: 50px;
+            color: white;
+            font-family: cursive;
+            font-size: 25px;
+            border: hidden;
+            outline: 2px dashed white;
+            outline-offset: -5px;
+            border-radius: 10px;
+            transition: 1s;
+        }
+        #capturebtn:hover,.interestedbtn:hover{
+            background-color: #f12331;
+        }
+        .categorybtn{
+            background-color: #5CA9DD;
+            width: 260px;
+        }
+        .categorybtn:hover{
+            background-color: #F16871;
+        }
+        .box3{
+            background-color: #5CA9DD;
+            background-image: url("./bg.svg");
+            width: 1457px;
+            height: 3650px;
+            position: relative;
+            top: -50px;
+            overflow: hidden;
+        }
+        #box3cloud{
+            width: 1460px;
+            position: relative;
+            top: -10px;
+        }
+        .line1{
+            position: relative;
+            left: -125px;
+            top: -80px;
+        }
+        .star1{
+            position: relative;
+            top: -60px;
+            left: 35px;
+            z-index: 1;
+        }
+        .line2{
+            position: relative;
+            left: 1155px;
+            top: -100px;
+        }
+        .star2{
+            position: relative;
+            top: -60px;
+            left: 1265px;
+            z-index: 1;
+        }
+        .line3{
+            position: relative;
+            left: 1050px;
+            top: -100px;
+            height: 100px;
+        }
+        .star3{
+            position: relative;
+            top: -80px;
+            left: 1120px;
+            z-index: 1;
+            width: 30px;
+            transform: rotate(35deg);
+        }
+        .line4{
+            position: relative;
+            left: 1200px;
+            top: -180px;
+            height: 100px;
+        }
+        .star4{
+            position: relative;
+            top: -170px;
+            left: 1240px;
+            z-index: 1;
+            width: 30px;
+            transform: rotate(35deg);
+        }
+        #aboutus{
+            width: 1100px;
+            height: 370px;
+            margin-left: 150px;
+            margin-top: -100px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .aboutusimg{
+            margin:10px 30px;
+        }
+        .cheese,#cuteness,#categorieshead,#categoriesimghead,#ourachievements,p,.price,#bestvalue,.recentworkstext{
+            font-size: 40px;
+            color: white;
+            font-family: cursive;
+            font-style:  oblique;
+        }
+        .since2014,#whychooseus{
+            color: white;
+            font-family: cursive;
+            font-style:  oblique;
+            font-size: 20px;
+        }
+        .aboutustext,#gc1,#gc2,#gc3,#categoriesimgtext{
+            color: white;
+            font-size: 20px;
+            font-family: serif;
+            opacity: 0.9;
+        }
+        .tag,.planinfo{
+            color: white;
+            font-size: 17px;
+            font-family: cursive;
+            opacity: 0.9;
+        }
+        .gallery,.recentworks{
+            width: 1450px;
+            height: 430px;
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .gallerypics,.recentworkspics{
+            width: 1100px;
+            border-radius: 25px;
+            outline: 2px dashed white;
+            outline-offset: -20px;
+            height: 430px;
+            background-color: #F16871;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right:40px ;
+            margin-left: -200px;
+        }
+        .gallerycontent{
+            width: 300px;
+            height: 430px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .gallerypics img{
+            width: 350px;
+            height: 330px;
+        }
+        #gcarrow{
+            width: 55px;
+            height: 55px;
+            border-radius: 40px;
+            background-color: #F16871;
+            transition: 1s;
+        }
+        #gcarrow:hover{
+            transform: translate(15px);
+            background-color: #f12331;
+        }
+        .fa-arrow-right{
+            color: white;
+            font-size: 30px;
+        }
+        .categories{
+            margin-top: 100px;
+            width: 1457px;
+            height: 650px;
+            background-image: url("./waves.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .categoriesimage{
+            width: 600px;
+            height: 400px;
+            margin-left: 50px;
+            margin-top: 190px;
+            border-radius: 20px;
+            background-color: #F16871;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            place-content: center;
+            place-items: center;
+        }
+        #booknow{
+            height: 50px;
+            color: #F16871;
+            background-color: white;
+            font-family: cursive;
+            font-size: 25px;
+            border: hidden;
+            font-style: oblique;
+            border-radius: 12px;
+            transition: 0.8s;
+            font-weight: 600;
+        }
+        #booknow:hover{
+            color: #022662;
+            background-color: antiquewhite;
+        }
+        .achievements{
+            width: 1457px;
+            height: 300px;
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            place-content: center;
+
+        }
+        .achievementstext{
+            width: 550px;
+            height: 250px;
+            border-radius: 20px;
+            background-color: #F16871;
+            outline: 2px dashed white;
+            outline-offset: -15px;
+            margin-left: -50px;
+        }
+        .achievementstats{
+            width: 800px;
+            height: 250px;
+            background-color: #F16871;
+            outline: 2px dashed white;
+            outline-offset: -15px;
+            border-radius: 20px;
+            margin-left: 200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            place-content: center;
+        }
+        .achievementstats div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            color: white;
+            font-family: cursive;
+            font-style:  oblique;
+            font-size: 20px;
+        }
+        .plans{
+            background-image: url("./downwaves.svg");
+            background-repeat: no-repeat;
+            background-size: 1460px;
+            width: 1460px;
+            height: 700px;
+            display: grid;
+            place-content: center;
+            margin-top: 100px;
+            overflow: hidden;
+        }
+        .planbox{
+            width: 250px;
+            height: 250px;
+            background-color: #F16871;
+            outline: 2px dashed white;
+            outline-offset: -15px;
+            border-radius: 20px;
+            display: grid;
+            place-content: center;
+            gap: 10px;
+            transition: 0.8s;
+        }
+        .planbox:hover{
+            background-color: #f12331;
+        }
+        p{
+            margin-top: -180px;
+            margin-left: 470px;
+        }
+        #bestvalue{
+            transform: rotate(-90deg);
+            height: 50px;
+            width: 200px;
+            margin-left: -80px;
+            margin-top: 100px;
+        }
+        .planbox2a{
+            background-color: #5CA9DD;
+            outline: 0px;
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            width: 300px;
+        }
+        .planbox2b{
+            background-color: #5CA9DD;
+        }
+        .planbox2a:hover,.planbox2b:hover{
+            background-color: #022662;
+        }
+        .recentworkstext{
+            transform: translatex(-50%);
+            opacity: 0;
+            filter: blur(5px);
+            height: 20px;
+            width: 400px;
+            margin-top: 150px;
+            margin-left: 50px;
+            transition: 1s;
+        }
+        .recentpic{
+            width: 350px;
+            height: 400px;
+            margin-left: 45px;
+            border-radius: 20px;
+        }
+        footer{
+            height: 250px;
+            background-color: white;
+            width: 1457px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            place-content: center;
+            place-items: center;
+        }
+        h5{
+            font-family: cursive;
+            font-size: 15px;
+        }
+        .footertext,a{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(173, 169, 169);
+        }
+        .social{
+            width: 40px;
+            height: 40px;
+            border-radius: 30px;
+            border: 2px solid #f12331;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.7s;
+        }
+        .social:hover{
+            border: 2px solid #022662;
+        }
+        .fa{
+            color: #f12331;
+        }
+        .fa:hover{
+            color:#022662
+        }
+        .list{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .list a{
+            transition: 0.7s;
+        }
+        .list a:hover{
+            margin-left: 20px;
+            color: rgb(82, 80, 80);
+        }
+        .hidden{
+            opacity: 0;
+            filter: blur(5px);
+            transition: 1.5s;
+            transform: translatex(-50%);
+        }
+        .hidden2{
+            opacity: 0;
+            filter: blur(5px);
+            transition: 1s;
+            transform: translatex(-100%);
+            transition-delay: 0.3s;
+        }
+        .hidden3{
+            opacity: 0;
+            filter: blur(5px);
+            transition: 1s;
+            transform: translatex(50%);
+        }
+        .hidden4{
+            opacity: 0;
+            filter: blur(5px);
+            transition: 1s;
+            transform: translatex(50%);
+            transition-delay: 0.3s;
+        }
+        .hidden5{
+            opacity: 0;
+            filter: blur(5px);
+            transition: 2s;
+            transform: translatey(-100px);
+        }
+        .hidden6{
+            opacity: 0;
+            filter: blur(5px);
+            transition: 1s;
+            transform: translatey(100px);
+        }
+        .hidden7{
+            opacity: 0;
+            filter: blur(5px);
+            transition: 1s;
+            transform: scale(0);
+            transform: rotate(30deg);
+        }
+        .show{
+            filter: blur(0px);
+            opacity: 1;
+            transform: translatex(0%);
+            transform: translateY(0px);
+            transform: scale(1);
+            transform: rotate(0deg);
+        }
+        .show2{
+            transform: translatex(0%);
+            transform: rotate(-90deg);
+            opacity: 1;
+            filter: blur(0px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main" style="overflow: hidden;">
+        <nav class="hidden6">
+            <div id="navitems">
+                <a>Home</a>
+                <a>About Us</a>
+                <a>Services</a>
+                <a><img src="./header-logo 1.svg"></a>
+                <a>Pricing</a>
+                <a>Gallery</a>
+                <a>Conatct Us</a>
+            </div>
+        </nav>
+
+        <img class="nipple hidden5" src="./nipple.svg">
+        <img class="moon hidden5" src="./moon.svg">
+        <img class="logo hidden7 " src="./logo png.png">
+        <img class="car hidden5" src="./car.svg">
+        <img class="bottle hidden5" src="./bottle.svg">
+        <img class="toy hidden5" src="./toy.svg">
+        <img class="downcloud hidden5" src="./down cloud.svg"> 
+        
+    </div>
+    <div class="box2" style="overflow: hidden;">
+       <div class="bg1"></div>
+       <div class="bg2 hidden" style="overflow: hidden;"></div>
+       <div class="bg3"></div>
+       <div class="bg4 hidden3" style="overflow: hidden;"></div>
+       <div class="bg5"></div>
+       <div id="box2content">
+            <div class="box2pics">
+                    <img class="box2pic1 hidden" src="./box2pic1.svg">
+                    <img class="box2pic2 hidden2" src="./box2pic2.svg">
+            </div>
+            <div class="box2text">
+                <div class="orangebar hidden3">
+                        <img id="capture" src="./Capturing Memories with Smile.svg"><br>
+                        <img id="captureinfo" src="./SP SWATHI Baby Studio_ Where Precious Memories Begin. Established in 2014, we're your experts in baby photography, capturing the magic of childhood with love and excellence.svg">
+                </div>
+                <div class="bluebar hidden4">
+                        <img id="celebrate" src="./Celebrate Your Baby's Story with Us!.svg"><br><br>
+                        <button id="capturebtn">Capture Cuteness</button>
+                </div>
+           </div> 
+       </div>
+    </div>
+    <div class="box3" style="overflow: hidden;">
+        <img id="box3cloud" src="./up cloud.svg">
+        <img class="star1 hidden5" src="./Star .svg">
+        <img class="star2 hidden5" src="./Star .svg">
+        <img class="star3 hidden5" src="./Star .svg">
+        <img class="star4 hidden5" src="./Star .svg">
+        <img class="line1 hidden5" src="./Line .svg">
+        <img class="line2 hidden5" src="./Line .svg">
+        <img class="line3 hidden5" src="./Line .svg">
+        <img class="line4 hidden5" src="./Line .svg">
+
+        <div id="aboutus">
+            <img class="aboutusimg hidden7" src="./about us img.svg"> 
+            <div style="display: flex;flex-direction: column;gap: 15px;">
+                <div class="cheese hidden5"><span style="color: #022662;">Say "Cheese",</span> I'm Swathi</div>
+                <div class="since2014 hidden3">A Passionate Photographer <br> since 2014</div>
+                <div class="aboutustext hidden4">I believe every baby deserves a gift of memories. 
+                    Founded in 2014, my journey began with a realization of the importance of childhood photos. 
+                    With a commitment to excellence and a love for photography, 
+                    we have been providing exceptional baby photography services. 
+                    Our team shares the same passion, ensuring the highest quality in every shot.
+                </div>
+                <button class="interestedbtn hidden6">Interested? wanna know more</button>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallerypics hidden">
+                <img src="./gallerypic2.svg">
+                <img src="./gallerypic1.svg">
+                <img src="./gallerypic2.svg">
+                <img src="./gallerypic1.svg">
+            </div>
+            <div class="gallerycontent hidden3">
+                <div id="cuteness">Cuteness Galore!</div>
+                <div id="gc1">Explore my best shots of <br>adorable babies and <br>create timeless memories.</div>
+                <div id="gc2">Want your baby's photos <br>featured on my <br>dashboard?</div>
+                <div id="gc3">Don't miss out - book <br>your session today and be <br>part of our cuteness <br></div>
+                <div id="gcarrow" style="display: flex;justify-content: center;align-items: center;"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+        </div>
+        <div class="categories hidden6">
+            <div class="hidden" style="padding-left: 100px;margin-top: 150px;" >
+                <div id="categorieshead" style="color: #022662;">I'd Love to <br>Capture</div>
+                <div style="display: grid;grid-template-columns: 1fr 1fr;width: 600px;gap: 50px;margin-top: 50px;">
+                    <button class="categorybtn hidden">Maternity Shots</button>
+                    <button class="categorybtn hidden">Family Portraits</button>
+                    <button class="categorybtn hidden">New Born</button>
+                    <button class="categorybtn hidden2">Weddings</button>
+                    <button class="categorybtn hidden2">Babies</button>
+                    <button class="categorybtn hidden2">Pre-wedding</button>
+                </div>
+            </div>
+            <div class="categoriesimage hidden3">  
+                <img id="categoriesimg" src="./categoriesimg.svg" style="margin-left: 20px;outline: 2px dashed white;outline-offset: -20px;border-radius: 30px;">
+                <div style="display: grid;gap: 30px;">
+                    <div id="categoriesimghead">Little <br> Krishna</div>
+                    <div id="categoriesimgtext">Ready to <br>capture your<br> little one's<br> charm?</div>
+                    <button id="booknow">Book now</button>
+                </div>
+            </div>
+        </div>
+        <div class="achievements" style="overflow: hidden;">
+            <div class="achievementstext hidden">
+                <div style="margin-top: 50px;margin-left: 190px;">
+                    <div id="whychooseus">why choose us</div>
+                    <div id="ourachievements">Our <br> Achievements</div>
+                </div>
+            </div>
+            <div class="achievementstats hidden3">
+                <div>
+                    <img src="./Ellipse 9.svg"><br>
+                    500+<br>Customers
+                </div>
+                <div>
+                    <img src="./Ellipse 9.svg"><br>
+                    1700+<br>Photoshoots
+                </div>
+                <div>
+                    <img src="./Ellipse 9.svg"><br>
+                    3500+<br>Pictures
+                </div>
+            </div>
+        </div>
+        <div class="plans hidden5" style="overflow: hidden;">
+            <p style="color: #022662;">Choose Your Plan</p>
+            <div style="display: grid;grid-template-columns: 1fr 1fr 1fr;gap: 200px;margin-top: -50px;">
+                <div class="planbox hidden">
+                    <div class="tag">Cherished Moments</div>
+                    <div class="price">₹ 10,250</div>
+                    <div class="planinfo">candid photographer <br> 3 Hours studio session <br> 4 Delightful Themes <br> Total Package : ₹ 10,250</div>
+                </div>
+                <div class="planbox planbox2a">
+                    <div class="planbox planbox2b"> 
+                        <div class="tag">Captuted Dreams</div>
+                        <div class="price">₹ 12,250</div>
+                        <div class="planinfo">candid photographer <br> 3 Hours studio session <br> 4 Delightful Themes <br> Total Package : ₹ 12,250</div>
+                        </div>
+                    <div id="bestvalue">Best Value</div>
+                </div>
+                <div  class="planbox hidden3">
+                    <div class="tag">Cinematic Wonders</div>
+                    <div class="price">₹ 15,250</div>
+                    <div class="planinfo">candid photographer <br> 3 Hours studio session <br> 4 Delightful Themes <br> Total Package : ₹ 15,250</div>
+                </div>
+            </div>
+        </div>
+        <div class="recentworks" style="margin-top: 70px;overflow: hidden;width: 1460px;">
+            <div class="recentworkstext">Recent Works</div>
+            <div class="recentworkspics hidden4" style="margin-left: -100px;padding-left: 55px;">
+                <img src="./recentpic1.svg" class="recentpic">
+                <img src="./recentpic2.svg" class="recentpic">
+                <div>
+                    <img src="./recentpic3.jpg" class="recentpic" style="height: 180px;"><br>
+                    <img src="./recentpic4.jpg" class="recentpic" style="height: 180px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <img src="./header-logo 1.svg"><br><br>
+            <div class="footertext">We are a creative team designing <br>and creating sites focussed with <br>attention to detail. Come work with <br>us to explore NEW oppurtunities.</div>
+        </div>
+        <div>
+            <h5>Quick Links</h5>
+            <div class="list">
+                <a>About Us</a>
+                <a>Services</a>
+                <a>Pricing</a>
+                <a>Gallery</a>
+                <a>Contact</a>
+            </div>
+        </div>
+        <div >
+            <div class="list">
+            <h5>Services</h5>
+                <a>Maternity Shoot</a>
+                <a>New Born Shoot</a>
+                <a>Family Portraits</a>
+                <a>Wedding Shoot</a>
+                <a>Corporate Events</a>
+            </div>
+        </div>
+        <div >
+            <h5>Contact Us</h5>
+            <div class="list">
+                <a>+91 9398655703</a>
+                <a>20-52/1, SHARADA NAGAR,</a>
+                <a>SAROORNAGAR,</a>
+                <a>SP Swathi Photography, Hyderabad.</a>
+                <a>Telangana- 500060</a>
+            </div>
+        </div>
+        <div>
+            <h5>Get us on social</h5>
+            <div style="display: flex;gap: 15px;">
+                <div class="social"><i class="fa fa-facebook" ></i></div>
+                <div class="social"><i class="fa fa-twitter" ></i></div>
+                <div class="social"><i class="fa fa-instagram"></i></div>
+            </div>
+        </div>
+    </footer>   
+    
+
+    
+    <script>
+
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    });
+
+    const hiddenElements = document.querySelectorAll(".hidden");
+        hiddenElements.forEach((el) => observer.observe(el));
+
+
+
+        const observer2 = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    });
+
+    const hiddenElements2 = document.querySelectorAll(".hidden2");
+        hiddenElements2.forEach((el) => observer2.observe(el));
+
+
+        const observer3 = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    });
+
+    const hiddenElements3 = document.querySelectorAll(".hidden3");
+        hiddenElements3.forEach((el) => observer3.observe(el));
+
+
+
+        const observer4 = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    });
+
+    const hiddenElements4 = document.querySelectorAll(".hidden4");
+        hiddenElements4.forEach((el) => observer4.observe(el));
+
+
+
+        const observer5 = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    });
+
+    const hiddenElements5 = document.querySelectorAll(".hidden5");
+        hiddenElements5.forEach((el) => observer5.observe(el));
+
+
+
+        const observer6 = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    });
+
+    const hiddenElements6 = document.querySelectorAll(".hidden6");
+        hiddenElements6.forEach((el) => observer6.observe(el));
+
+
+
+        const observer7 = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    });
+
+    const hiddenElements7 = document.querySelectorAll(".hidden7");
+        hiddenElements7.forEach((el) => observer7.observe(el));
+
+
+        const observer8 = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show2');
+                } else {
+                entry.target.classList.remove('show2');
+            }
+        });
+    });
+
+    const hiddenElements8 = document.querySelectorAll(".recentworkstext");
+        hiddenElements8.forEach((el) => observer8.observe(el));
+    </script>
+</body>
+</html>
